@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>City Lakers United Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="crest">CLU</div>
+      <div>
+        <h1>City Lakers United</h1>
+        <p>Official club portal for players, officials, fixtures, and news.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#squad">First Team</a>
+      <a href="#formation">Formation</a>
+      <a href="#directory">Players</a>
+      <a href="#contacts">Contacts</a>
+      <a href="#fixtures">Fixtures</a>
+      <a href="#news">News</a>
+      <a href="#subs">Subs</a>
+      <a href="#inbox">Inbox</a>
+      <a href="#account">Account</a>
+      <a href="#staff">Officials</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="hero">
+      <div class="hero-copy">
+        <h2>Welcome to the official City Lakers United portal</h2>
+        <p id="about-copy">Explore the full squad, officials, and match-ready team information for the club.</p>
+        <p id="about-location">Based in Elgeyo Marakwet, Marakwet West Sub-County, Kapcherop Division, Lelan Ward, Koisungur Location, Kibigos Sub-Location.</p>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <h3>14</h3>
+          <span>Main squad members</span>
+        </div>
+        <div>
+          <h3>10</h3>
+          <span>Substitute players</span>
+        </div>
+        <div>
+          <h3>6</h3>
+          <span>Officials & staff</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="account" class="section section-alt">
+      <div class="section-header">
+        <h2>Account Access</h2>
+        <p>Register or login to send messages through the club inbox and review your message history.</p>
+      </div>
+      <div class="auth-grid">
+        <article class="card account-card">
+          <h3>Create Account</h3>
+          <form id="register-form" class="auth-form">
+            <label>
+              Username
+              <input type="text" id="register-username" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="register-email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="register-password" placeholder="Choose a secure password" required />
+            </label>
+            <button type="submit" class="button">Register</button>
+            <p id="register-status" class="form-result"></p>
+          </form>
+        </article>
+
+        <article class="card account-card">
+          <h3>Login</h3>
+          <form id="login-form" class="auth-form">
+            <label>
+              Email
+              <input type="email" id="login-email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="login-password" placeholder="Enter password" required />
+            </label>
+            <button type="submit" class="button">Login</button>
+            <p id="login-status" class="form-result"></p>
+          </form>
+        </article>
+
+        <article class="card account-card hidden" id="user-panel">
+          <h3>Signed in</h3>
+          <p id="user-welcome"></p>
+          <button type="button" id="user-logout" class="button">Logout</button>
+          <button type="button" id="refresh-inbox" class="button secondary">Refresh Inbox</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="squad" class="section">
+      <div class="section-header">
+        <h2>First Team Squad</h2>
+        <p>The official first-team roster for City Lakers United.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Goalkeepers</h3>
+          <ul>
+            <li>Joel Korir</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Defenders</h3>
+          <ul>
+            <li>RB Robert Simiyu</li>
+            <li>LB Evans Lakeny</li>
+            <li>CB Hosea Biwwot</li>
+            <li>CB Hosea Kiprop</li>
+            <li>DMF Justine Chelanga</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Midfield</h3>
+          <ul>
+            <li>CMF Evans Kosgei</li>
+            <li>CMF Evans Limo</li>
+            <li>DMF Gideon Kipkeu</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Attack</h3>
+          <ul>
+            <li>RW Titus Kemboi</li>
+            <li>RW Justine Mutai</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="formation" class="section section-alt">
+      <div class="section-header">
+        <h2>4-3-3 Formation</h2>
+        <p>City Lakers United's preferred EPL-style 4-3-3 tactical setup.</p>
+      </div>
+
+      <div class="formation-panel">
+        <div class="formation-header">
+          <span>Formation</span>
+          <strong>4-3-3</strong>
+        </div>
+        <div class="formation-pitch">
+          <div class="player-row defenders">
+            <div class="player-node">
+              <span>RB</span>
+              <strong>Evans Lakeny</strong>
+            </div>
+            <div class="player-node">
+              <span>CB</span>
+              <strong>Hosea Kiprop</strong>
+            </div>
+            <div class="player-node">
+              <span>CB</span>
+              <strong>Justine Chelanga</strong>
+            </div>
+            <div class="player-node">
+              <span>LB</span>
+              <strong>Hosea Biwwot</strong>
+            </div>
+          </div>
+
+          <div class="player-row midfielders">
+            <div class="player-node">
+              <span>CM</span>
+              <strong>Evans Limo</strong>
+            </div>
+            <div class="player-node">
+              <span>CMF</span>
+              <strong>Evans Kosgei</strong>
+            </div>
+            <div class="player-node">
+              <span>ST</span>
+              <strong>Mathew Kipsang</strong>
+            </div>
+          </div>
+
+          <div class="player-row forwards">
+            <div class="player-node">
+              <span>RW</span>
+              <strong>Justine Mutai</strong>
+            </div>
+            <div class="player-node">
+              <span>LW</span>
+              <strong>Titus Kemboi</strong>
+            </div>
+            <div class="player-node">
+              <span>LW</span>
+              <strong>Evans Kiptoo</strong>
+            </div>
+          </div>
+
+          <div class="player-node goalkeeper">
+            <span>GK</span>
+            <strong>Joel Korir</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="directory" class="section section-alt">
+      <div class="section-header">
+        <h2>Player Directory</h2>
+        <p>Upload player photos, email players directly, or send them a message through the club inbox.</p>
+      </div>
+
+      <div class="player-grid">
+        <article class="player-card">
+          <div class="player-avatar" data-player="Joel Korir"><span>Upload photo</span></div>
+          <h4>Joel Korir</h4>
+          <p>Goalkeeper</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:joel.korir@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Joel Korir">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Joel Korir">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Joel Korir" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Robert Simiyu"><span>Upload photo</span></div>
+          <h4>Robert Simiyu</h4>
+          <p>Right Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:robert.simiyu@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Robert Simiyu">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Robert Simiyu">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Robert Simiyu" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Evans Lakeny"><span>Upload photo</span></div>
+          <h4>Evans Lakeny</h4>
+          <p>Right Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:evans.lakeny@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Evans Lakeny">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Evans Lakeny">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Evans Lakeny" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Hosea Biwwot"><span>Upload photo</span></div>
+          <h4>Hosea Biwwot</h4>
+          <p>Left Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:hosea.biwwot@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Hosea Biwwot">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Hosea Biwwot">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Hosea Biwwot" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Hosea Kiprop"><span>Upload photo</span></div>
+          <h4>Hosea Kiprop</h4>
+          <p>Center Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:hosea.kiprop@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Hosea Kiprop">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Hosea Kiprop">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Hosea Kiprop" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Justine Chelanga"><span>Upload photo</span></div>
+          <h4>Justine Chelanga</h4>
+          <p>Center Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:justine.chelanga@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Justine Chelanga">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Justine Chelanga">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Justine Chelanga" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Evans Kosgei"><span>Upload photo</span></div>
+          <h4>Evans Kosgei</h4>
+          <p>Central Midfield</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:evans.kosgei@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Evans Kosgei">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Evans Kosgei">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Evans Kosgei" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Evans Limo"><span>Upload photo</span></div>
+          <h4>Evans Limo</h4>
+          <p>Center Midfield</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:evans.limo@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Evans Limo">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Evans Limo">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Evans Limo" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Mathew Kipsang"><span>Upload photo</span></div>
+          <h4>Mathew Kipsang</h4>
+          <p>Striker</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:mathew.kipsang@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Mathew Kipsang">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Mathew Kipsang">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Mathew Kipsang" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Titus Kemboi"><span>Upload photo</span></div>
+          <h4>Titus Kemboi</h4>
+          <p>Left Wing</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:titus.kemboi@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Titus Kemboi">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Titus Kemboi">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Titus Kemboi" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Justine Mutai"><span>Upload photo</span></div>
+          <h4>Justine Mutai</h4>
+          <p>Right Wing</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:justine.mutai@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Justine Mutai">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Justine Mutai">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Justine Mutai" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Evans Kiptoo"><span>Upload photo</span></div>
+          <h4>Evans Kiptoo</h4>
+          <p>Left Wing</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:evans.kiptoo@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Evans Kiptoo">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Evans Kiptoo">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Evans Kiptoo" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Brian Kiprono"><span>Upload photo</span></div>
+          <h4>Brian Kiprono</h4>
+          <p>CMF</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:brian.kiprono@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Brian Kiprono">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Brian Kiprono">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Brian Kiprono" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Brian Kiprono Kimeli"><span>Upload photo</span></div>
+          <h4>Brian Kiprono Kimeli</h4>
+          <p>Center Midfield</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:brian.kiprono.kimeli@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Brian Kiprono Kimeli">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Brian Kiprono Kimeli">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Brian Kiprono Kimeli" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Collins Kigen"><span>Upload photo</span></div>
+          <h4>Collins Kigen</h4>
+          <p>Defensive Midfield</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:collins.kigen@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Collins Kigen">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Collins Kigen">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Collins Kigen" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Meshack Kimutai"><span>Upload photo</span></div>
+          <h4>Meshack Kimutai</h4>
+          <p>Left Wing</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:meshack.kimutai@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Meshack Kimutai">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Meshack Kimutai">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Meshack Kimutai" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Enock Kiprop"><span>Upload photo</span></div>
+          <h4>Enock Kiprop</h4>
+          <p>Left Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:enock.kiprop@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Enock Kiprop">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Enock Kiprop">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Enock Kiprop" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Isaac Kibet"><span>Upload photo</span></div>
+          <h4>Isaac Kibet</h4>
+          <p>Center Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:isaac.kibet@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Isaac Kibet">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Isaac Kibet">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Isaac Kibet" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Kenneth Ruto"><span>Upload photo</span></div>
+          <h4>Kenneth Ruto</h4>
+          <p>Left Wing</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:kenneth.ruto@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Kenneth Ruto">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Kenneth Ruto">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Kenneth Ruto" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Collins Kipkemoi"><span>Upload photo</span></div>
+          <h4>Collins Kipkemoi</h4>
+          <p>Center Back</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:collins.kipkemoi@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Collins Kipkemoi">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Collins Kipkemoi">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Collins Kipkemoi" />
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-avatar" data-player="Gideon Kipkeu"><span>Upload photo</span></div>
+          <h4>Gideon Kipkeu</h4>
+          <p>DMF</p>
+          <div class="player-actions">
+            <a class="button email" href="mailto:gideon.kipkeu@citylakersunited.com">Email</a>
+            <button type="button" class="button secondary message-btn" data-player="Gideon Kipkeu">Message</button>
+          </div>
+          <div class="image-upload">
+            <button type="button" class="button small upload-btn" data-player="Gideon Kipkeu">Edit image</button>
+            <input type="file" accept="image/*" class="image-input hidden" data-player="Gideon Kipkeu" />
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="section-header">
+        <h2>Player Contacts</h2>
+        <p>Phone numbers for player messaging when email is not available.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Contact List</h3>
+          <ul>
+            <li>Joel Korir — 254701001001</li>
+            <li>Robert Simiyu — 254701001002</li>
+            <li>Evans Lakeny — 254701001003</li>
+            <li>Hosea Biwwot — 254701001004</li>
+            <li>Hosea Kiprop — 254701001005</li>
+            <li>Justine Chelanga — 254701001006</li>
+            <li>Evans Kosgei — 254701001007</li>
+            <li>Evans Limo — 254701001008</li>
+            <li>Mathew Kipsang — 254701001009</li>
+            <li>Titus Kemboi — 254701001010</li>
+            <li>Justine Mutai — 254701001011</li>
+            <li>Evans Kiptoo — 254701001012</li>
+            <li>Brian Kiprono — 254701001013</li>
+            <li>Brian Kiprono Kimeli — 254701001014</li>
+            <li>Collins Kigen — 254701001015</li>
+            <li>Meshack Kimutai — 254701001016</li>
+            <li>Enock Kiprop — 254701001017</li>
+            <li>Isaac Kibet — 254701001018</li>
+            <li>Kenneth Ruto — 254701001019</li>
+            <li>Collins Kipkemoi — 254701001020</li>
+            <li>Gideon Kipkeu — 254701001021</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="inbox" class="section section-alt">
+      <div class="section-header">
+        <h2>Player Inbox</h2>
+        <p>Send a message to any player using the club inbox form.</p>
+      </div>
+
+      <form id="message-form" class="message-form">
+        <label>
+          Player
+          <select id="message-player" required>
+            <option value="Joel Korir">Joel Korir</option>
+            <option value="Robert Simiyu">Robert Simiyu</option>
+            <option value="Evans Lakeny">Evans Lakeny</option>
+            <option value="Hosea Biwwot">Hosea Biwwot</option>
+            <option value="Hosea Kiprop">Hosea Kiprop</option>
+            <option value="Justine Chelanga">Justine Chelanga</option>
+            <option value="Evans Kosgei">Evans Kosgei</option>
+            <option value="Evans Limo">Evans Limo</option>
+            <option value="Mathew Kipsang">Mathew Kipsang</option>
+            <option value="Titus Kemboi">Titus Kemboi</option>
+            <option value="Justine Mutai">Justine Mutai</option>
+            <option value="Evans Kiptoo">Evans Kiptoo</option>
+            <option value="Brian Kiprono">Brian Kiprono</option>
+            <option value="Brian Kiprono Kimeli">Brian Kiprono Kimeli</option>
+            <option value="Collins Kigen">Collins Kigen</option>
+            <option value="Meshack Kimutai">Meshack Kimutai</option>
+            <option value="Enock Kiprop">Enock Kiprop</option>
+            <option value="Isaac Kibet">Isaac Kibet</option>
+            <option value="Kenneth Ruto">Kenneth Ruto</option>
+            <option value="Collins Kipkemoi">Collins Kipkemoi</option>
+            <option value="Gideon Kipkeu">Gideon Kipkeu</option>
+          </select>
+        </label>
+
+        <label>
+          Your email
+          <input type="email" id="sender-email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Subject
+          <input type="text" id="message-subject" placeholder="Match update or request" required />
+        </label>
+
+        <label>
+          Message
+          <textarea id="message-body" placeholder="Write your message here" required></textarea>
+        </label>
+
+        <button type="submit" class="button">Send Message</button>
+        <p id="message-result" class="form-result"></p>
+      </form>
+      <p id="inbox-login-note" class="form-result">Please login to send messages and view your inbox. If a player has no email, use their phone number listed in the Contacts section.</p>
+      <div id="inbox-messages" class="message-history"></div>
+    </section>
+
+    <section id="admin" class="section">
+      <div class="section-header">
+        <h2>Admin Panel</h2>
+        <p>Manage portal content and review player inbox activity from the admin panel.</p>
+      </div>
+
+      <div class="admin-grid">
+        <article class="admin-card">
+          <h3>Admin Login</h3>
+          <form id="admin-form" class="admin-form">
+            <label>
+              Username
+              <input type="text" id="admin-username" placeholder="admin" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="admin-password" placeholder="Enter password" required />
+            </label>
+            <button type="submit" class="button">Login</button>
+          </form>
+          <p id="admin-status" class="form-result"></p>
+        </article>
+
+        <article class="admin-card hidden" id="admin-actions">
+          <h3>Admin Dashboard</h3>
+          <div class="admin-dashboard-grid">
+            <div class="admin-panel">
+              <h4>Edit About Section</h4>
+              <form id="admin-about-form" class="admin-form">
+                <label>
+                  About description
+                  <textarea id="admin-about-text" rows="4" required>Explore the full squad, officials, and match-ready team information for the club.</textarea>
+                </label>
+                <label>
+                  Location text
+                  <textarea id="admin-about-location" rows="3" required>Based in Elgeyo Marakwet, Marakwet West Sub-County, Kapcherop Division, Lelan Ward, Koisungur Location, Kibigos Sub-Location.</textarea>
+                </label>
+                <button type="submit" class="button">Save About</button>
+                <p id="admin-about-status" class="form-result"></p>
+              </form>
+            </div>
+
+            <div class="admin-panel">
+              <h4>Safaricom STK Push</h4>
+              <form id="stk-form" class="admin-form">
+                <label>
+                  Phone number
+                  <input type="tel" id="stk-phone" placeholder="2547XXXXXXXX" required />
+                </label>
+                <label>
+                  Amount (KES)
+                  <input type="number" id="stk-amount" placeholder="100" min="1" required />
+                </label>
+                <label>
+                  Description
+                  <input type="text" id="stk-description" placeholder="Matchday fee or donation" required />
+                </label>
+                <button type="submit" class="button">Send STK Push</button>
+                <p id="stk-status" class="form-result"></p>
+              </form>
+            </div>
+
+            <div class="admin-panel">
+              <h4>Edit Player Profiles</h4>
+              <form id="admin-player-form" class="admin-form">
+                <label>
+                  Select Player
+                  <select id="admin-player-select">
+                    <option value="">Choose a player</option>
+                  </select>
+                </label>
+                <label>
+                  Full Name
+                  <input type="text" id="admin-player-name" placeholder="Player name" required />
+                </label>
+                <label>
+                  Position
+                  <input type="text" id="admin-player-position" placeholder="Position" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" id="admin-player-email" placeholder="player@citylakersunited.com" required />
+                </label>
+                <button type="submit" class="button">Save Player</button>
+                <p id="admin-player-result" class="form-result"></p>
+              </form>
+            </div>
+
+            <div class="admin-panel">
+              <h4>Edit Formation</h4>
+              <form id="admin-formation-form" class="admin-form">
+                <label>
+                  Formation name
+                  <input type="text" id="admin-formation-type" value="4-3-3" required />
+                </label>
+                <label>
+                  Formation lineup
+                  <textarea id="admin-formation-lineup" rows="11" required>RB: Evans Lakeny
+CB: Hosea Kiprop
+CB: Justine Chelanga
+LB: Hosea Biwwot
+CM: Evans Limo
+CMF: Evans Kosgei
+ST: Mathew Kipsang
+RW: Justine Mutai
+LW: Titus Kemboi
+LW: Evans Kiptoo
+GK: Joel Korir</textarea>
+                </label>
+                <button type="submit" class="button">Update Formation</button>
+                <p id="admin-formation-status" class="form-result"></p>
+              </form>
+            </div>
+
+            <div class="admin-panel">
+              <h4>Admin tools</h4>
+              <ul>
+                <li>Edit player images and profiles</li>
+                <li>Send a club announcement</li>
+                <li>Review inbox messages</li>
+                <li>Manage staff and officials</li>
+              </ul>
+              <button type="button" class="button small" id="admin-logout">Logout</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="subs" class="section section-alt">
+      <div class="section-header">
+        <h2>Substitute Squad</h2>
+        <p>Backup players ready to step in and support the team.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Defenders</h3>
+          <ul>
+            <li>LB Enock Kiprop</li>
+            <li>CB Isaac Kibet</li>
+            <li>LW Kenneth Ruto</li>
+            <li>CB Gideon Kipkeu</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Midfielders</h3>
+          <ul>
+            <li>CMF Brian Kiprono</li>
+            <li>CMF Brian Kiprono Kimeli (Cherono)</li>
+            <li>DMF Gideon Kipkeu</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Midfielders</h3>
+          <ul>
+            <li>CMF Brian Kiprono Kimeli (Cherono)</li>
+            <li>DMF Collins Kigen</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Forwards</h3>
+          <ul>
+            <li>CB Collins Kipkemoi</li>
+            <li>LW Meshack Kimutai</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="note">Note: Brian Kiprono Kimeli is currently listed as unavailable due to injury.</p>
+    </section>
+
+    <section id="captains" class="section section-alt">
+      <div class="section-header">
+        <h2>Dressing Room Captains</h2>
+        <p>Team captain and senior leadership selected to guide the dressing room.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Team Captain</h3>
+          <p>Hosea Kiprop</p>
+        </article>
+        <article class="card">
+          <h3>Captain's Assistants</h3>
+          <ul>
+            <li>Hosea Biwwot</li>
+            <li>Evans Limo</li>
+            <li>Evans Lakeny</li>
+            <li>Evans Kosgei</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="staff" class="section">
+      <div class="section-header">
+        <h2>Club Officials</h2>
+        <p>The leadership and support team behind City Lakers United.</p>
+      </div>
+
+      <div class="staff-grid">
+        <article class="staff-card">
+          <h3>Head Coach</h3>
+          <p>Omondi</p>
+        </article>
+        <article class="staff-card">
+          <h3>Assistant Coach</h3>
+          <p>Kenneth Kiptoo</p>
+        </article>
+        <article class="staff-card">
+          <h3>Manager</h3>
+          <p>Hosea Kosgei</p>
+        </article>
+        <article class="staff-card">
+          <h3>Doctor</h3>
+          <p>Caleb Kimutai</p>
+        </article>
+        <article class="staff-card">
+          <h3>Trainer</h3>
+          <p>Brian Kipngetich</p>
+        </article>
+        <article class="staff-card">
+          <h3>Technical Bench</h3>
+          <p>Donald Kipkorir, Elijah Koech, Drogba</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="academy" class="section section-alt">
+      <div class="section-header">
+        <h2>Academy</h2>
+        <p>Developing the next generation of City Lakers United talent across coaching, fitness, and technical training.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Youth Development</h3>
+          <p>Under-18 and under-21 academy squads receive professional coaching, strength training, and tactical preparation.</p>
+        </article>
+        <article class="card">
+          <h3>Training Programs</h3>
+          <p>Structured academy sessions include ball control, passing drills, set-piece practice, and mental performance support.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-header">
+        <h2>Club Shop</h2>
+        <p>Official City Lakers United merchandise and kit for supporters and players.</p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Official Kit</h3>
+          <p>Shop the full club jersey, training wear, and fan apparel designed for comfort and style.</p>
+        </article>
+        <article class="card">
+          <h3>Club Gear</h3>
+          <p>Available items include scarves, hats, water bottles, backpacks, and signed memorabilia from the first team.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="fixtures" class="section section-alt">
+      <div class="section-header">
+        <h2>Fixtures</h2>
+        <p>Upcoming matchday schedule for City Lakers United.</p>
+      </div>
+      <div class="fixtures-card">
+        <table>
+          <thead>
+            <tr>
+              <th>Matchday</th>
+              <th>Opponent</th>
+              <th>Venue</th>
+              <th>Date</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Marakwet Rangers</td>
+              <td>Home</td>
+              <td>June 15, 2026</td>
+              <td>16:00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>East Valley United</td>
+              <td>Away</td>
+              <td>June 22, 2026</td>
+              <td>15:30</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Kapcherop FC</td>
+              <td>Home</td>
+              <td>June 29, 2026</td>
+              <td>16:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="news" class="section section-alt">
+      <div class="section-header">
+        <h2>Latest News</h2>
+        <p>Club updates, training notes, and matchday announcements.</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <h3>Squad announcement for the new season</h3>
+          <p>City Lakers United finalizes the first-team roster for the upcoming campaign in Elgeyo Marakwet.</p>
+          <span>June 4, 2026</span>
+        </article>
+        <article class="news-card">
+          <h3>Training camp opens in Kapcherop</h3>
+          <p>The players begin their preseason build-up in Kapcherop Division ahead of matchday 1.</p>
+          <span>June 2, 2026</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt contact-card">
+      <h2>Contact the Club</h2>
+      <p>For inquiries and team updates, reach out to City Lakers United.</p>
+      <p><strong>Email:</strong> info@citylakersunited.com</p>
+      <p><strong>Location:</strong> Elgeyo Marakwet, Marakwet West Sub-County, Kapcherop Division, Lelan Ward, Koisungur Location, Kibigos Sub-Location.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>City Lakers United &copy; 2026. Built as the official portal for the club.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
